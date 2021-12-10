@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html>
+
+<head></head>
+
 <body>
-<style>
- body, canvas {
-     margin: 0;
- }
- canvas {
-     display: block;
- }
-</style>
-<canvas id="canvas"></canvas>
-<script type="module">
- import matrix from './dist/matrix.mjs';
- matrix(canvas, {
-     chars: ['0', '1'],
-     color: '#000',
-     background: 'rgba(255,255,255, 0.05)',
-     exit: false,
-     font_size: 20
- })
-</script>
+    <style>
+        body,
+        canvas {
+            margin: 0;
+        }
+
+        canvas {
+            display: block;
+        }
+    </style>
+    <canvas id="canvas"></canvas>
+    <script type="module">
+        import matrix from './dist/matrix.mjs';
+        matrix(canvas, {
+            chars: ['0', '1', '#','.', 'L', 'O', '@', '&', '*', '%', 
+            '$', '!', '?', ';', ':', '-', '_', '+', '=', '~', '`', '|', '\\', '^', '<', '>', '{', '}', '[', ']', '(', ')', '"', '\'', ','],
+            color: '#fff',
+            background: 'rgba(0,0,0, 0.05)',
+            exit: false,
+            font_size: 18
+        })
+    </script>
+</body>
+
+</html>
